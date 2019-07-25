@@ -21,6 +21,9 @@ export default class Counter extends Component  {
         })
     }
     render() {
+
+        const { count } = this.state;
+
         return (
             <div className="counter-block">
                 <button className="btn btn-minus"
@@ -28,7 +31,7 @@ export default class Counter extends Component  {
                     Minus
                 </button>
                 <div className="counter-item">
-                    {this.state.count}
+                    {count}
                 </div>
                 <button className="btn btn-plus"
                     onClick={() => this.onPlus()}>
